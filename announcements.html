@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>公告 - 万画画社</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">万画画社</a>
+        <div class="menu-toggle">☰</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="rules.html">规则</a></li>
+                <li><a href="members.html">社员</a></li>
+                <li><a href="announcements.html">公告</a></li>
+                <li><a href="contact.html">联系</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>网站更新公告</h1>
+
+        <h3>最新公告</h3>
+        <div id="latestAnnouncementContainer" style="margin-bottom: 2rem;">
+        </div>
+
+        <div class="content-card">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 10px;">
+                <h3>历届更新</h3>
+                <div style="display: flex; gap: 10px;">
+                    <button id="sortBtn" class="btn" style="font-size: 0.9rem;">切换为旧闻优先</button>
+                    <div id="pageSelectContainer">
+                        <!-- JS 填充 -->
+                    </div>
+                </div>
+            </div>
+
+            <div id="announcementsList">
+                <!-- JS 填充 -->
+            </div>
+
+            <div class="pagination" id="announcementsPagination" style="justify-content: center;">
+                <!-- JS 填充 -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 万画画社 版权所有 | 网站制作：咪噜喵MiruCat</p>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/announcements.js"></script>
+</body>
+</html>

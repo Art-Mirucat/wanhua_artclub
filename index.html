@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页 - 万画画社</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico"> <!-- 假设有 -->
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">万画画社</a>
+        <div class="menu-toggle">☰</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="rules.html">规则</a></li>
+                <li><a href="members.html">社员</a></li>
+                <li><a href="announcements.html">公告</a></li>
+                <li><a href="contact.html">联系</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">万卷丹青，画梦浮生</h1>
+            <p style="font-size: 1.2rem; color: #8d6e63;">欢迎来到万画画社，这里是创作者的栖息地。</p>
+            <div style="margin-top: 3rem;">
+                <a href="members.html" class="btn" style="padding: 12px 30px; font-size: 1.1rem;">查看社员</a>
+            </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            <div class="content-card" style="text-align: center;">
+                <h3>关于我们</h3>
+                <p>万画画社致力于汇聚各路二次元创作者，无论是绘画、写作、占卜还是手作，都能在这里找到志同道合的伙伴。</p>
+            </div>
+            <div class="content-card" style="text-align: center;">
+                <h3>最新公告</h3>
+                <p id="latestIndexAnnouncement">加载中...</p>
+                <a href="announcements.html" style="color: var(--accent-color); display: inline-block; margin-top: 10px;">查看更多</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 万画画社 版权所有 | 网站制作：咪噜喵MiruCat</p>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/announcements.js"></script>
+</body>
+</html>

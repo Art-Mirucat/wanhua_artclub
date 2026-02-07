@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>社员 - 万画画社</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">万画画社</a>
+        <div class="menu-toggle">☰</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="rules.html">规则</a></li>
+                <li><a href="members.html">社员</a></li>
+                <li><a href="announcements.html">公告</a></li>
+                <li><a href="contact.html">联系</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>社员名单</h1>
+
+        <div class="filter-container">
+            <input type="text" id="searchInput" class="search-bar" placeholder="搜索社员名称、职业或标签...">
+            
+            <div class="selected-tags-display" id="selectedTagsDisplay">
+                <!-- 选中的标签显示在这里 -->
+            </div>
+
+            <div class="filter-tags-area" id="filterTagsArea">
+                <!-- JS 动态生成筛选器 -->
+            </div>
+        </div>
+
+        <div class="members-grid" id="membersGrid">
+            <!-- JS 动态生成社员卡片 -->
+        </div>
+
+        <div class="pagination" id="pagination">
+            <!-- JS 动态生成分页 -->
+        </div>
+    </main>
+
+    <!-- 社员详情模态框 -->
+    <div id="memberModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <!-- JS 动态填充详情 -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 媒体预览模态框 -->
+    <div id="mediaPreviewModal" class="modal media-preview-modal">
+        <div class="modal-content media-preview-content">
+            <span class="media-preview-close">&times;</span>
+            <div class="media-container">
+                <!-- 媒体内容将由 JS 动态加载 -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 万画画社 版权所有 | 网站制作：咪噜喵MiruCat</p>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/members.js"></script>
+</body>
+</html>
